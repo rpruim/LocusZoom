@@ -1570,7 +1570,7 @@ refSnpPos <- empty.data.frame();
 default.args <- list(
 	theme = NULL,                         # select a theme (collection of settings) for plot
 	experimental = FALSE,                 # try some experimental features?
-	pquery = TRUE,                        # is pquery available?
+	pquery = FALSE,                       # is pquery available?
     format = "pdf",        	              # file format (pdf or png or both)
 	recombTable = "results.recomb_rate",  # Recomb Rate Table (for SQL)
 	clean=TRUE,                           # remove temp files?
@@ -1629,7 +1629,7 @@ default.args <- list(
 	smallDot = .4,                        # smallest p-value cex 
 	largeDot = .8,                        # largest p-value cex 
 	refDot = NULL,                        # largest p-value cex 
-	rfrows = 4,                           # max number of rows for reflat genes
+	rfrows = '4',                         # max number of rows for reflat genes
 	warnMissingGenes = FALSE,             # should we warn about missing genese on the plot?
 	showPartialGenes = TRUE,              # should genes that don't fit completely be displayed?
 	shiftGeneNames = TRUE,                # should genes that don't fit completely be displayed?
