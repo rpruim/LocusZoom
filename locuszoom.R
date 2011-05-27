@@ -1055,8 +1055,8 @@ zplot <- function(metal,ld=NULL,recrate=NULL,refidx=NULL,nrugs=0,postlude=NULL,a
 			multiplier=1/args[['unit']]
 		);
 
-		if ( args[['rfrows']] < 2 ){       # use value as upper bound
-			args[['rfrows']] <- min(args[['rfrows']],optRows)
+		if ( length( args[['rfrows']] < 2 ) ) {       # use value as upper bound
+			args[['rfrows']] <- min(args[['rfrows']], optRows)
 		} else {  # use smallest two values as lower and upper bounds
 			args[['rfrows']] <- sort(args[['rfrows']])
 			rows <- min( args[['rfrows']][2], optRows )
